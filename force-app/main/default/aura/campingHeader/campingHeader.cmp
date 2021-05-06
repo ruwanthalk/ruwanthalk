@@ -1,0 +1,14 @@
+<!--
+ - Created by Ruwantha.Lankathilak on 7/13/2017.
+ -->
+
+<aura:component >
+    <div class="slds-page-header" role="banner">
+        <div class="slds-grid">
+            <div class="slds-col">
+                <p class="slds-text-heading--small slds-text-align--center">My Camping Items</p>
+                <h1 class="slds-text-heading--medium slds-text-align--center">Camping Items</h1>
+            </div>
+        </div>
+    </div>
+</aura:component>

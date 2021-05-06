@@ -1,0 +1,16 @@
+<!--
+ - Created by Ruwantha.Lankathilak on 7/18/2017.
+ -->
+
+<aura:component description="helloMessageInteractive">
+
+    <aura:attribute name="message" type="String"/>
+
+    <p>Message of the day <ui:outputText value="{!v.message}"/> </p>
+
+    <div>
+        <ui:button class="slds-button" press="{!c.handleClick2}" label="You look nice today"/>
+        <ui:button press="{!c.handleClick}" label="Today is going to be a great day!"/>
+    </div>
+
+</aura:component>

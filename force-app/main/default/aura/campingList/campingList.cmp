@@ -1,0 +1,73 @@
+<!--
+ - Created by Ruwantha.Lankathilak on 7/13/2017.
+ -->
+
+<aura:component controller="CampingListController">
+
+    <aura:attribute name="newItem" type="Camping_Item__c" default="{'sobjectType':'Camping_Item__c','Name':'test','Price__c' : 12,'Quantity__c':20,'Packed__c':false}"/>
+    <aura:attribute name="items" type="Camping_Item__c[]"/>
+    <aura:handler action="{!c.doInit}" name="init" value="{!this}" />
+
+    <div aria-labelledby="NewCampingItems">
+        <fieldset name="New Camping Item" class="slds-container--fluid slds-box slds-theme--info" >
+
+            <legend class="slds-text-heading--medium slds-p-top--large"> Add Camping Item</legend>
+
+            <form class="slds-form--compound">
+
+                <div class="slds-form-element slds-is-required">
+                    <div class="slds-form-element__control">
+                        <ui:inputText aura:id="name"
+                                      label="Camping Item Name"
+                                      class="slds-input"
+                                      labelClass="slds-item_label"
+                                      value="{!v.newItem.Name}"
+                                      required="true"/>
+                    </div>
+                </div>
+                <div class="slds-form-element">
+                    <div class="slds-form-element__control">
+                        <ui:inputCurrency aura:id="price"
+                                          label="Price"
+                                          labelClass="slds-item_label"
+                                          class="slds-input"
+                                          value="{!v.newItem.Price__c}"
+                                          required="false"/>
+                    </div>
+                </div>
+                <div class="slds-form-element">
+                    <div class="slds-form-element__control">
+                        <ui:inputNumber aura:id="quantity"
+                                        label="Quantity"
+                                        labelClass="slds-item_label"
+                                        value="{!v.newItem.Quantity__c}"
+                                        class="slds-input"
+                                        required="false"/>
+                    </div>
+                </div>
+                <div class="slds-form-element">
+                    <div class="slds-form-element__control">
+                        <ui:inputCheckbox aura:id="isParked"
+                                          label="Is Parked"
+                                          labelClass="slds-item_label"
+                                          value="{!v.newItem.Packed__c}"
+                                          required="false"/>
+                    </div>
+                </div>
+
+                <div class="slds-form-element">
+                    <ui:button press="{!c.clickNewCampingItem}" class="slds-button slds-button--brand" label="Create Camping Item"/>
+                </div>
+
+            </form>
+        </fieldset>
+    </div>
+
+
+    <div >
+        <aura:iteration items="{!v.items}" var="item">
+            <c:campingListItem item="{!item}"/>
+        </aura:iteration>
+    </div>
+
+</aura:component>

@@ -1,0 +1,21 @@
+<!--
+ - Created by Ruwantha.Lankathilak on 7/14/2017.
+ -->
+
+<aura:component description="campingListItem">
+
+    <aura:attribute name="item" type="Camping_Item__c" default="{Name:'test',Price__c:10,Quantity__c:20,Parked__c:true}" required="true"/>
+    <div class="slds-card slds-p-top--large">
+        <div class="slds-card__header">
+            <ui:outputText value="{!v.item.Name}"/>
+        </div>
+        <div class="slds-card__body">
+            <ul>
+                <li> <ui:outputCurrency value="{!v.item.Price__c}"/> </li>
+                <li> <ui:outputNumber value="{!v.item.Quantity__c}"/> </li>
+                <li> <ui:outputCheckbox value="{!v.item.Packed__c}"/> </li>
+            </ul>
+        </div>
+    </div>
+    <ui:button label="Packed!" press="{!c.packItem}"/>
+</aura:component>
