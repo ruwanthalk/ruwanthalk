@@ -1,0 +1,27 @@
+.chat-window {
+    border: 1px solid #dddddd;
+    padding: 10px;
+    height: 300px;
+    overflow-y: auto;
+}
+
+.user-message {
+    text-align: right;
+    padding: 5px;
+    margin: 5px;
+    background-color: #eef;
+}
+
+.bot-message {
+    text-align: left;
+    padding: 5px;
+    margin: 5px;
+    background-color: #fee;
+}
+.message-input{
+    width : 100%
+}
+
+.send-button{
+    margin-top : 18px
+}
