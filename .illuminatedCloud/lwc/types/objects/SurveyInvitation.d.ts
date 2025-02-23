@@ -1,0 +1,59 @@
+// DO NOT EDIT: This file is managed by Illuminated Cloud. Any external changes will be discarded.
+
+declare interface SurveyInvitation extends SObject 
+{
+    AttachedContentDocuments?: AttachedContentDocument[];
+    CombinedAttachments?: CombinedAttachment[];
+    Community?: Network;
+    CommunityId?: string;
+    Contact?: Contact;
+    ContactId?: string;
+    ContentDocumentLinks?: ContentDocumentLink[];
+    ContextRecord?: FlowExecutionErrorEvent;
+    CreatedBy?: User;
+    CreatedById?: string;
+    CreatedDate?: string;
+    EmailBranding?: SurveyEmailBranding;
+    EmailBrandingId?: string;
+    FirstPublishLocation?: ContentVersion;
+    FlowOrchestrationWorkItems?: FlowOrchestrationWorkItem[];
+    Invitation?: SurveyQuestionResponse;
+    InvitationLink?: string;
+    InviteExpiryDateTime?: string;
+    IsDefault?: boolean;
+    IsDeleted?: boolean;
+    LastModifiedBy?: User;
+    LastModifiedById?: string;
+    LastModifiedDate?: string;
+    LastReferencedDate?: string;
+    LastViewedDate?: string;
+    Lead?: Lead;
+    LeadId?: string;
+    LinkedEntity?: ContentDocumentLinkChangeEvent;
+    Name?: string;
+    OptionsAllowGuestUserResponse?: boolean;
+    OptionsAllowParticipantAccessTheirResponse?: boolean;
+    OptionsCollectAnonymousResponse?: boolean;
+    Owner?: SObject;
+    OwnerId?: string;
+    Parent?: SurveySubjectChangeEvent;
+    Participant?: SObject;
+    ParticipantId?: string;
+    ProcessInstances?: ProcessInstance[];
+    ProcessSteps?: ProcessInstanceHistory[];
+    RelatedRecord?: FlowRecordRelation;
+    ResponseStatus?: string;
+    Shares?: SurveyInvitationShare[];
+    Survey?: Survey;
+    SurveyId?: string;
+    SurveyInvitation?: SurveyEngagementContext;
+    SurveyQuestionScores?: SurveyQuestionScore[];
+    SurveyResponses?: SurveyResponse[];
+    SurveySubjectInvitation?: SurveySubject[];
+    SurveySubjects?: SurveySubject[];
+    SystemModstamp?: string;
+    TargetObject?: PendingServiceRoutingInteractionInfo;
+    User?: User;
+    UserId?: string;
+    UUID?: string;
+}

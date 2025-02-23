@@ -1,0 +1,60 @@
+// DO NOT EDIT: This file is managed by Illuminated Cloud. Any external changes will be discarded.
+
+declare interface Solution extends SObject 
+{
+    ActivityHistories?: ActivityHistory[];
+    AttachedContentDocuments?: AttachedContentDocument[];
+    Attachments?: Attachment[];
+    CaseSolutions?: CaseSolution[];
+    CombinedAttachments?: CombinedAttachment[];
+    ContentDocumentLinks?: ContentDocumentLink[];
+    ContextRecord?: FlowExecutionErrorEvent;
+    CreatedBy?: User;
+    CreatedById?: string;
+    CreatedDate?: string;
+    Emails?: EmailMessage[];
+    EventRelations?: EventRelation[];
+    Events?: Event[];
+    Feeds?: SolutionFeed[];
+    FeedSubscriptionsForEntity?: EntitySubscription[];
+    FirstPublishLocation?: ContentVersion;
+    FlowOrchestrationWorkItems?: FlowOrchestrationWorkItem[];
+    Histories?: SolutionHistory[];
+    IsDeleted?: boolean;
+    IsHtml?: boolean;
+    IsPublished?: boolean;
+    IsPublishedInPublicKb?: boolean;
+    IsReviewed?: boolean;
+    LastModifiedBy?: User;
+    LastModifiedById?: string;
+    LastModifiedDate?: string;
+    LastReferencedDate?: string;
+    LastViewedDate?: string;
+    LinkedEntity?: ContentDocumentLinkChangeEvent;
+    OpenActivities?: OpenActivity[];
+    Owner?: User;
+    OwnerId?: string;
+    Parent?: FeedComment;
+    ParentEntities?: NetworkActivityAudit[];
+    ParentRecord?: NetworkFeedResponseMetric;
+    ProcessInstances?: ProcessInstance[];
+    ProcessSteps?: ProcessInstanceHistory[];
+    RelatedRecord?: FlowRecordRelation;
+    RelatedSobject?: CategoryData;
+    RelatedTo?: EmailMessageChangeEvent;
+    Relation?: EventRelationChangeEvent;
+    SolutionName?: string;
+    SolutionNote?: string;
+    SolutionNumber?: string;
+    Status?: string;
+    Subject?: SurveySubjectChangeEvent;
+    SurveySubjectEntities?: SurveySubject[];
+    SystemModstamp?: string;
+    TargetObject?: PendingServiceRoutingInteractionInfo;
+    TaskRelations?: TaskRelation[];
+    Tasks?: Task[];
+    TimesUsed?: number;
+    TopicAssignments?: TopicAssignment[];
+    Votes?: Vote[];
+    What?: EventChangeEvent;
+}

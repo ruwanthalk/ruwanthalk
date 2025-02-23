@@ -1,0 +1,65 @@
+// DO NOT EDIT: This file is managed by Illuminated Cloud. Any external changes will be discarded.
+
+declare interface ScratchOrgInfo extends SObject 
+{
+    AdminEmail?: string;
+    AttachedContentDocuments?: AttachedContentDocument[];
+    AuthCode?: string;
+    CombinedAttachments?: CombinedAttachment[];
+    ConnectedAppCallbackUrl?: string;
+    ConnectedAppConsumerKey?: string;
+    ContentDocumentLinks?: ContentDocumentLink[];
+    Country?: string;
+    CreatedBy?: User;
+    CreatedById?: string;
+    CreatedDate?: string;
+    DeletedBy?: string;
+    DeletedDate?: Date;
+    Description?: string;
+    DurationDays?: number;
+    Edition?: string;
+    ErrorCode?: string;
+    ExpirationDate?: Date;
+    Features?: string;
+    Feeds?: ScratchOrgInfoFeed[];
+    FeedSubscriptionsForEntity?: EntitySubscription[];
+    FirstPublishLocation?: ContentVersion;
+    HasSampleData?: boolean;
+    Histories?: ScratchOrgInfoHistory[];
+    IsDeleted?: boolean;
+    Language?: string;
+    LastLoginDate?: Date;
+    LastModifiedBy?: User;
+    LastModifiedById?: string;
+    LastModifiedDate?: string;
+    LastReferencedDate?: string;
+    LastViewedDate?: string;
+    LinkedEntity?: ContentDocumentLinkChangeEvent;
+    LoginUrl?: string;
+    Name?: string;
+    Namespace?: string;
+    OrgName?: string;
+    Owner?: SObject;
+    OwnerId?: string;
+    Package2AncestorIds?: string;
+    Parent?: FeedComment;
+    ParentEntities?: NetworkActivityAudit[];
+    ParentRecord?: NetworkFeedResponseMetric;
+    ProcessInstances?: ProcessInstance[];
+    ProcessSteps?: ProcessInstanceHistory[];
+    Release?: string;
+    ScratchOrg?: string;
+    ScratchOrgInfo?: ActiveScratchOrg;
+    Shares?: ScratchOrgInfoShare[];
+    SignupCountry?: string;
+    SignupEmail?: string;
+    SignupInstance?: string;
+    SignupLanguage?: string;
+    SignupTrialDays?: number;
+    SignupUsername?: string;
+    SourceOrg?: string;
+    Status?: string;
+    SystemModstamp?: string;
+    TargetObject?: PendingServiceRoutingInteractionInfo;
+    Username?: string;
+}

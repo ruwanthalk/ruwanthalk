@@ -1,0 +1,61 @@
+// DO NOT EDIT: This file is managed by Illuminated Cloud. Any external changes will be discarded.
+
+declare interface PartnerFundAllocation extends SObject 
+{
+    ActivityHistories?: ActivityHistory[];
+    Amount?: number;
+    AttachedContentDocuments?: AttachedContentDocument[];
+    Attachments?: Attachment[];
+    Budget?: PartnerMarketingBudget;
+    BudgetId?: string;
+    ChannelPartner?: Account;
+    ChannelPartnerId?: string;
+    CombinedAttachments?: CombinedAttachment[];
+    ContentDocumentLinks?: ContentDocumentLink[];
+    ContextRecord?: FlowExecutionErrorEvent;
+    CreatedBy?: User;
+    CreatedById?: string;
+    CreatedDate?: string;
+    Description?: string;
+    Emails?: EmailMessage[];
+    EventRelations?: EventRelation[];
+    Events?: Event[];
+    Feeds?: PartnerFundAllocationFeed[];
+    FeedSubscriptionsForEntity?: EntitySubscription[];
+    FirstPublishLocation?: ContentVersion;
+    FlowOrchestrationWorkItems?: FlowOrchestrationWorkItem[];
+    Histories?: PartnerFundAllocationHistory[];
+    IsDeleted?: boolean;
+    LastModifiedBy?: User;
+    LastModifiedById?: string;
+    LastModifiedDate?: string;
+    LastReferencedDate?: string;
+    LastViewedDate?: string;
+    LinkedEntity?: ContentDocumentLinkChangeEvent;
+    Notes?: Note[];
+    NotesAndAttachments?: NoteAndAttachment[];
+    OpenActivities?: OpenActivity[];
+    Owner?: SObject;
+    OwnerId?: string;
+    Parent?: FeedComment;
+    ParentEntities?: NetworkActivityAudit[];
+    ParentRecord?: NetworkFeedResponseMetric;
+    PartnerFundClaims?: PartnerFundClaim[];
+    PartnerFundRequests?: PartnerFundRequest[];
+    ProcessInstances?: ProcessInstance[];
+    ProcessSteps?: ProcessInstanceHistory[];
+    RelatedRecord?: FlowRecordRelation;
+    RelatedTo?: EmailMessageChangeEvent;
+    Relation?: EventRelationChangeEvent;
+    Shares?: PartnerFundAllocationShare[];
+    SystemModstamp?: string;
+    TargetObject?: PendingServiceRoutingInteractionInfo;
+    TaskRelations?: TaskRelation[];
+    Tasks?: Task[];
+    Title?: string;
+    TopicAssignments?: TopicAssignment[];
+    TotalApprovedFcs?: number;
+    TotalApprovedFrs?: number;
+    TotalReimbursedFcs?: number;
+    What?: EventChangeEvent;
+}

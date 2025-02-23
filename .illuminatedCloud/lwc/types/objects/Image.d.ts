@@ -1,0 +1,59 @@
+// DO NOT EDIT: This file is managed by Illuminated Cloud. Any external changes will be discarded.
+
+declare interface Image extends SObject 
+{
+    ActivityHistories?: ActivityHistory[];
+    AlternateText?: string;
+    AttachedContentDocuments?: AttachedContentDocument[];
+    Attachments?: Attachment[];
+    CapturedAngle?: string;
+    CombinedAttachments?: CombinedAttachment[];
+    ContentDocument?: ContentDocument;
+    ContentDocumentId?: string;
+    ContentDocumentLinks?: ContentDocumentLink[];
+    ContextRecord?: FlowExecutionErrorEvent;
+    CreatedBy?: User;
+    CreatedById?: string;
+    CreatedDate?: string;
+    Emails?: EmailMessage[];
+    EventRelations?: EventRelation[];
+    Events?: Event[];
+    Feeds?: ImageFeed[];
+    FeedSubscriptionsForEntity?: EntitySubscription[];
+    FirstPublishLocation?: ContentVersion;
+    FlowOrchestrationWorkItems?: FlowOrchestrationWorkItem[];
+    Histories?: ImageHistory[];
+    ImageClass?: string;
+    ImageClassObjectType?: string;
+    ImageViewType?: string;
+    IsActive?: boolean;
+    IsDeleted?: boolean;
+    LastModifiedBy?: User;
+    LastModifiedById?: string;
+    LastModifiedDate?: string;
+    LastReferencedDate?: string;
+    LastViewedDate?: string;
+    LinkedEntity?: ContentDocumentLinkChangeEvent;
+    Name?: string;
+    Notes?: Note[];
+    NotesAndAttachments?: NoteAndAttachment[];
+    OpenActivities?: OpenActivity[];
+    Owner?: SObject;
+    OwnerId?: string;
+    Parent?: FeedComment;
+    ParentEntities?: NetworkActivityAudit[];
+    ParentRecord?: NetworkFeedResponseMetric;
+    ProcessInstances?: ProcessInstance[];
+    ProcessSteps?: ProcessInstanceHistory[];
+    RelatedRecord?: FlowRecordRelation;
+    RelatedTo?: EmailMessageChangeEvent;
+    Relation?: EventRelationChangeEvent;
+    Shares?: ImageShare[];
+    SystemModstamp?: string;
+    TargetObject?: PendingServiceRoutingInteractionInfo;
+    TaskRelations?: TaskRelation[];
+    Tasks?: Task[];
+    Title?: string;
+    Url?: string;
+    What?: EventChangeEvent;
+}

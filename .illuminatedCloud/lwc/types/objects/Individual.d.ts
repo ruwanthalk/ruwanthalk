@@ -1,0 +1,59 @@
+// DO NOT EDIT: This file is managed by Illuminated Cloud. Any external changes will be discarded.
+
+declare interface Individual extends SObject 
+{
+    AuthorizationFormConsents?: AuthorizationFormConsent[];
+    BirthDate?: Date;
+    CanStorePiiElsewhere?: boolean;
+    ChildrenCount?: number;
+    ConsentGiver?: AuthorizationFormConsentChangeEvent;
+    ConsumerCreditScore?: number;
+    ConsumerCreditScoreProviderName?: string;
+    Contacts?: Contact[];
+    ContextRecord?: FlowExecutionErrorEvent;
+    ConvictionsCount?: number;
+    CreatedBy?: User;
+    CreatedById?: string;
+    CreatedDate?: string;
+    DeathDate?: Date;
+    DuplicateRecordItems?: DuplicateRecordItem[];
+    FirstName?: string;
+    FlowOrchestrationWorkItems?: FlowOrchestrationWorkItem[];
+    HasOptedOutGeoTracking?: boolean;
+    HasOptedOutProcessing?: boolean;
+    HasOptedOutProfiling?: boolean;
+    HasOptedOutSolicit?: boolean;
+    HasOptedOutTracking?: boolean;
+    Histories?: IndividualHistory[];
+    Individual?: ContactChangeEvent;
+    Individuals?: ContactPointTypeConsent[];
+    IndividualsAge?: string;
+    InfluencerRating?: number;
+    IsDeleted?: boolean;
+    IsHomeOwner?: boolean;
+    LastModifiedBy?: User;
+    LastModifiedById?: string;
+    LastModifiedDate?: string;
+    LastName?: string;
+    LastViewedDate?: string;
+    Leads?: Lead[];
+    MasterRecord?: Individual;
+    MasterRecordId?: string;
+    MilitaryService?: string;
+    Name?: string;
+    Occupation?: string;
+    Owner?: User;
+    OwnerId?: string;
+    Party?: ContactPointTypeConsentChangeEvent;
+    PartyConsents?: PartyConsent[];
+    PartyRoleCustomers?: Customer[];
+    PartyRoleSellers?: Seller[];
+    RelatedRecord?: FlowRecordRelation;
+    Salutation?: string;
+    SendIndividualData?: boolean;
+    Shares?: IndividualShare[];
+    ShouldForget?: boolean;
+    SystemModstamp?: string;
+    TargetObject?: PendingServiceRoutingInteractionInfo;
+    Website?: string;
+}
