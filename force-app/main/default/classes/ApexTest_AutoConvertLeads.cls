@@ -3,7 +3,7 @@
  */
 @IsTest(SeeAllData = true)
 public with sharing class ApexTest_AutoConvertLeads {
-// Add a test with feature 1 and 2 and 4
+// Add a test with feature 1 and 2 and 3 and 4 ss
     static testMethod void testLeads(){
 
 
