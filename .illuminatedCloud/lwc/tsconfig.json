@@ -1,0 +1,28 @@
+// DO NOT EDIT: This file is managed by Illuminated Cloud. Any external changes will be discarded.
+{
+  "include": [
+    "../../**/lwc/**/*.ts",
+    "types/**/*.d.ts"
+  ],
+  "exclude": [
+    "../../.sfdx/**/*.d.ts"
+  ],
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true,
+    "skipLibCheck": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "target": "ESNext",
+    "module": "NodeNext",
+    "moduleResolution": "Node",
+    "baseUrl": "../..",
+    "paths": {
+      "c/emailContainer": [
+        "force-app/main/default/lwc/emailContainer/emailContainer"
+      ]
+    }
+  }
+}

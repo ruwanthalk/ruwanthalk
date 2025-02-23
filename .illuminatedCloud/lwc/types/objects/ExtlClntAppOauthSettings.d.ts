@@ -1,0 +1,61 @@
+// DO NOT EDIT: This file is managed by Illuminated Cloud. Any external changes will be discarded.
+
+declare interface ExtlClntAppOauthSettings extends SObject 
+{
+    ClientAssertionCertificate?: string;
+    CreatedBy?: User;
+    CreatedById?: string;
+    CreatedDate?: string;
+    DeveloperName?: string;
+    ExternalClientApplication?: ExternalClientApplication;
+    ExternalClientApplicationId?: string;
+    ExtlClntAppOauthIpRanges?: ExtlClntAppOauthIpRange[];
+    ExtlClntAppOauthOptionsFirstPartyAppEnabled?: boolean;
+    ExtlClntAppOauthSetAttrs?: ExtlClntAppOauthSetAttr[];
+    ExtlClntAppOauthSetCustmScps?: ExtlClntAppOauthSetCustmScp[];
+    ExtlClntAppOauthSettings?: ExtlClntAppOauthConsumer;
+    IsDeleted?: boolean;
+    Language?: string;
+    LastModifiedBy?: User;
+    LastModifiedById?: string;
+    LastModifiedDate?: string;
+    MasterLabel?: string;
+    NamespacePrefix?: string;
+    OauthLink?: string;
+    OauthScopesADDRESS?: boolean;
+    OauthScopesAPI?: boolean;
+    OauthScopesCDP_API?: boolean;
+    OauthScopesCDP_CALCULATED_INSIGHT_API?: boolean;
+    OauthScopesCDP_IDENTITYRESOLUTION_API?: boolean;
+    OauthScopesCDP_INGEST_API?: boolean;
+    OauthScopesCDP_PROFILE_API?: boolean;
+    OauthScopesCDP_QUERY_API?: boolean;
+    OauthScopesCDP_SEGMENT_API?: boolean;
+    OauthScopesCHATBOT_API?: boolean;
+    OauthScopesCHATTER_REST_API?: boolean;
+    OauthScopesCONTENT?: boolean;
+    OauthScopesCUSTOM_PERMISSIONS?: boolean;
+    OauthScopesECLAIR_REST_API?: boolean;
+    OauthScopesEINSTEIN_GPT_API?: boolean;
+    OauthScopesEMAIL?: boolean;
+    OauthScopesFORGOT_PASSWORD?: boolean;
+    OauthScopesFULL?: boolean;
+    OauthScopesHUB_API?: boolean;
+    OauthScopesINTERACTION_API?: boolean;
+    OauthScopesLIGHTNING?: boolean;
+    OauthScopesOFFLINE_ACCESS?: boolean;
+    OauthScopesOPENID?: boolean;
+    OauthScopesPARDOT_API?: boolean;
+    OauthScopesPHONE?: boolean;
+    OauthScopesPROFILE?: boolean;
+    OauthScopesPWDLESS_LOGIN_API?: boolean;
+    OauthScopesREFRESH_TOKEN?: boolean;
+    OauthScopesSFAP_API?: boolean;
+    OauthScopesSSO?: boolean;
+    OauthScopesUSER_REGISTRATION_API?: boolean;
+    OauthScopesVF?: boolean;
+    OauthScopesWAVE_REST_API?: boolean;
+    OauthScopesWEB?: boolean;
+    SingleLogoutUrl?: string;
+    SystemModstamp?: string;
+}

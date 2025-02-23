@@ -1,0 +1,61 @@
+// DO NOT EDIT: This file is managed by Illuminated Cloud. Any external changes will be discarded.
+
+declare interface ContactCleanInfoChangeEvent extends SObject 
+{
+    Address?: Address;
+    ChangeEventHeader?: ChangeEventHeader;
+    City?: string;
+    CleanedByJob?: boolean;
+    CleanedByUser?: boolean;
+    Contact?: Contact;
+    ContactId?: string;
+    ContactStatusDataDotCom?: string;
+    Country?: string;
+    CreatedBy?: User;
+    CreatedById?: string;
+    CreatedDate?: string;
+    DataDotComId?: string;
+    Email?: string;
+    FirstName?: string;
+    GeocodeAccuracy?: string;
+    IsDifferentCity?: boolean;
+    IsDifferentCountry?: boolean;
+    IsDifferentCountryCode?: boolean;
+    IsDifferentEmail?: boolean;
+    IsDifferentFirstName?: boolean;
+    IsDifferentLastName?: boolean;
+    IsDifferentPhone?: boolean;
+    IsDifferentPostalCode?: boolean;
+    IsDifferentState?: boolean;
+    IsDifferentStateCode?: boolean;
+    IsDifferentStreet?: boolean;
+    IsDifferentTitle?: boolean;
+    IsFlaggedWrongAddress?: boolean;
+    IsFlaggedWrongEmail?: boolean;
+    IsFlaggedWrongName?: boolean;
+    IsFlaggedWrongPhone?: boolean;
+    IsFlaggedWrongTitle?: boolean;
+    IsInactive?: boolean;
+    IsReviewedAddress?: boolean;
+    IsReviewedEmail?: boolean;
+    IsReviewedName?: boolean;
+    IsReviewedPhone?: boolean;
+    IsReviewedTitle?: boolean;
+    LastMatchedDate?: string;
+    LastModifiedBy?: User;
+    LastModifiedById?: string;
+    LastModifiedDate?: string;
+    LastName?: string;
+    LastStatusChangedBy?: User;
+    LastStatusChangedById?: string;
+    LastStatusChangedDate?: string;
+    Latitude?: number;
+    Longitude?: number;
+    Name?: string;
+    Phone?: string;
+    PostalCode?: string;
+    ReplayId?: string;
+    State?: string;
+    Street?: string;
+    Title?: string;
+}

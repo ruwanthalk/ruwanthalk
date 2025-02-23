@@ -1,0 +1,62 @@
+// DO NOT EDIT: This file is managed by Illuminated Cloud. Any external changes will be discarded.
+
+declare interface PartyConsent extends SObject 
+{
+    Action?: string;
+    ActivityHistories?: ActivityHistory[];
+    AttachedContentDocuments?: AttachedContentDocument[];
+    BusinessBrand?: BusinessBrand;
+    BusinessBrandId?: string;
+    CaptureContactPointType?: string;
+    CaptureDate?: string;
+    CaptureSource?: string;
+    CombinedAttachments?: CombinedAttachment[];
+    ContentDocumentLinks?: ContentDocumentLink[];
+    ContextRecord?: FlowExecutionErrorEvent;
+    CreatedBy?: User;
+    CreatedById?: string;
+    CreatedDate?: string;
+    DataUsePurpose?: DataUsePurpose;
+    DataUsePurposeId?: string;
+    DoubleConsentCaptureDate?: string;
+    EffectiveFrom?: Date;
+    EffectiveTo?: Date;
+    Emails?: EmailMessage[];
+    EventRelations?: EventRelation[];
+    Events?: Event[];
+    Feeds?: PartyConsentFeed[];
+    FeedSubscriptionsForEntity?: EntitySubscription[];
+    FirstPublishLocation?: ContentVersion;
+    FlowOrchestrationWorkItems?: FlowOrchestrationWorkItem[];
+    Histories?: PartyConsentHistory[];
+    IsDeleted?: boolean;
+    LastModifiedBy?: User;
+    LastModifiedById?: string;
+    LastModifiedDate?: string;
+    LastReferencedDate?: string;
+    LastViewedDate?: string;
+    LinkedEntity?: ContentDocumentLinkChangeEvent;
+    Name?: string;
+    OpenActivities?: OpenActivity[];
+    Owner?: SObject;
+    OwnerId?: string;
+    Parent?: FeedComment;
+    ParentEntities?: NetworkActivityAudit[];
+    ParentRecord?: NetworkFeedResponseMetric;
+    Party?: Individual;
+    PartyId?: string;
+    PartyRole?: SObject;
+    PartyRoleId?: string;
+    PrivacyConsentStatus?: string;
+    ProcessInstances?: ProcessInstance[];
+    ProcessSteps?: ProcessInstanceHistory[];
+    RelatedRecord?: FlowRecordRelation;
+    RelatedTo?: EmailMessageChangeEvent;
+    Relation?: EventRelationChangeEvent;
+    Shares?: PartyConsentShare[];
+    SystemModstamp?: string;
+    TargetObject?: PendingServiceRoutingInteractionInfo;
+    TaskRelations?: TaskRelation[];
+    Tasks?: Task[];
+    What?: EventChangeEvent;
+}

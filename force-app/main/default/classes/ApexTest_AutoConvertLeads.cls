@@ -12,3 +12,4 @@ public with sharing class ApexTest_AutoConvertLeads {
         AutoConvertLeads.LeadAssign(new List<Id>(idLeadMap.keySet()));
     }
 }
+// Feature 10

@@ -1,0 +1,67 @@
+// DO NOT EDIT: This file is managed by Illuminated Cloud. Any external changes will be discarded.
+
+declare interface PartnerFundRequest extends SObject 
+{
+    Activity?: string;
+    ActivityHistories?: ActivityHistory[];
+    Allocation?: PartnerFundAllocation;
+    AllocationId?: string;
+    Amount?: number;
+    AttachedContentDocuments?: AttachedContentDocument[];
+    Attachments?: Attachment[];
+    Budget?: PartnerMarketingBudget;
+    BudgetId?: string;
+    Campaign?: Campaign;
+    CampaignId?: string;
+    ChannelPartner?: Account;
+    ChannelPartnerId?: string;
+    CombinedAttachments?: CombinedAttachment[];
+    ContentDocumentLinks?: ContentDocumentLink[];
+    ContextRecord?: FlowExecutionErrorEvent;
+    CreatedBy?: User;
+    CreatedById?: string;
+    CreatedDate?: string;
+    Description?: string;
+    DesiredOutcome?: string;
+    Emails?: EmailMessage[];
+    EventRelations?: EventRelation[];
+    Events?: Event[];
+    Feeds?: PartnerFundRequestFeed[];
+    FeedSubscriptionsForEntity?: EntitySubscription[];
+    FirstPublishLocation?: ContentVersion;
+    FlowOrchestrationWorkItems?: FlowOrchestrationWorkItem[];
+    Histories?: PartnerFundRequestHistory[];
+    IsDeleted?: boolean;
+    LastModifiedBy?: User;
+    LastModifiedById?: string;
+    LastModifiedDate?: string;
+    LastReferencedDate?: string;
+    LastViewedDate?: string;
+    LinkedEntity?: ContentDocumentLinkChangeEvent;
+    Notes?: Note[];
+    NotesAndAttachments?: NoteAndAttachment[];
+    OpenActivities?: OpenActivity[];
+    Owner?: SObject;
+    OwnerId?: string;
+    Parent?: FeedComment;
+    ParentEntities?: NetworkActivityAudit[];
+    ParentRecord?: NetworkFeedResponseMetric;
+    PartnerFundClaims?: PartnerFundClaim[];
+    ProcessInstances?: ProcessInstance[];
+    ProcessSteps?: ProcessInstanceHistory[];
+    RelatedRecord?: FlowRecordRelation;
+    RelatedTo?: EmailMessageChangeEvent;
+    Relation?: EventRelationChangeEvent;
+    RequestedAmount?: number;
+    Shares?: PartnerFundRequestShare[];
+    Status?: string;
+    SystemModstamp?: string;
+    TargetObject?: PendingServiceRoutingInteractionInfo;
+    TaskRelations?: TaskRelation[];
+    Tasks?: Task[];
+    Title?: string;
+    TopicAssignments?: TopicAssignment[];
+    TotalApprovedFcs?: number;
+    TotalReimbursedFcs?: number;
+    What?: EventChangeEvent;
+}

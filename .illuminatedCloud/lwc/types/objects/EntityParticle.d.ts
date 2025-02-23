@@ -1,0 +1,65 @@
+// DO NOT EDIT: This file is managed by Illuminated Cloud. Any external changes will be discarded.
+
+declare interface EntityParticle extends SObject 
+{
+    ByteLength?: number;
+    DataType?: string;
+    DefaultValueFormula?: string;
+    DeveloperName?: string;
+    Digits?: number;
+    DurableId?: string;
+    EntityDefinition?: EntityDefinition;
+    EntityDefinitionId?: string;
+    ExtraTypeInfo?: string;
+    FieldDefinition?: FieldDefinition;
+    FieldDefinitionId?: string;
+    InlineHelpText?: string;
+    IsApiFilterable?: boolean;
+    IsApiGroupable?: boolean;
+    IsApiSortable?: boolean;
+    IsAutonumber?: boolean;
+    IsCalculated?: boolean;
+    IsCaseSensitive?: boolean;
+    IsCompactLayoutable?: boolean;
+    IsComponent?: boolean;
+    IsCompound?: boolean;
+    IsCreatable?: boolean;
+    IsDefaultedOnCreate?: boolean;
+    IsDependentPicklist?: boolean;
+    IsDeprecatedAndHidden?: boolean;
+    IsDisplayLocationInDecimal?: boolean;
+    IsEncrypted?: boolean;
+    IsFieldHistoryTracked?: boolean;
+    IsHighScaleNumber?: boolean;
+    IsHtmlFormatted?: boolean;
+    IsIdLookup?: boolean;
+    IsLayoutable?: boolean;
+    IsListVisible?: boolean;
+    IsNameField?: boolean;
+    IsNamePointing?: boolean;
+    IsNillable?: boolean;
+    IsPermissionable?: boolean;
+    IsUnique?: boolean;
+    IsUpdatable?: boolean;
+    IsWorkflowFilterable?: boolean;
+    IsWriteRequiresMasterRead?: boolean;
+    Label?: string;
+    Length?: number;
+    Mask?: string;
+    MaskType?: string;
+    MasterLabel?: string;
+    Name?: string;
+    NamespacePrefix?: string;
+    PicklistValues?: PicklistValueInfo[];
+    Precision?: number;
+    QualifiedApiName?: string;
+    ReferenceTargetField?: string;
+    ReferenceTo?: Object;
+    RelationshipName?: string;
+    RelationshipOrder?: number;
+    Scale?: number;
+    ServiceDataType?: DataType;
+    ServiceDataTypeId?: string;
+    ValueType?: DataType;
+    ValueTypeId?: string;
+}
