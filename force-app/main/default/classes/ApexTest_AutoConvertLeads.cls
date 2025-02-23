@@ -5,10 +5,12 @@
 public with sharing class ApexTest_AutoConvertLeads {
 // Add a test with feature 1 and 2 and 3 and 4 ss
     static testMethod void testLeads(){
-
+// Feature 5 and Feature 6
 
         Map<Id,Lead> idLeadMap = new Map<Id, Lead>([SELECT Id FROM Lead LIMIT 1000]);
 
         AutoConvertLeads.LeadAssign(new List<Id>(idLeadMap.keySet()));
-    }//Feature 8
+    }//feature 9
 }
+//Feature 11
+
