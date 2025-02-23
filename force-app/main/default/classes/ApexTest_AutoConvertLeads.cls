@@ -10,5 +10,5 @@ public with sharing class ApexTest_AutoConvertLeads {
         Map<Id,Lead> idLeadMap = new Map<Id, Lead>([SELECT Id FROM Lead LIMIT 1000]);
 
         AutoConvertLeads.LeadAssign(new List<Id>(idLeadMap.keySet()));
-    }
+    }//Feature 8
 }
